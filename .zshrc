@@ -62,3 +62,6 @@ alias la='ls -la'
 alias h='history'
 alias g='grep --color=auto -ERUIn'
 alias v='vim'
+
+# personal alias
+source $HOME/.zshrc.personal
