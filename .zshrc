@@ -44,13 +44,13 @@ colors
 PROMPT="${fg[white]}%n@%m:%d${reset_color}
 %(?.%{${fg[white]}%}.%{${fg[red]}%})%#%{${reset_color}%} "
 
-# completion color
-export LS_COLORS='di=33:ln=32:so=41:pi=31:ex=31:bd=43:cd=43:su=31:sg=31:tw=31:ow=31'
-zstyle ':completion:*' list-colors $LS_COLORS
-
 # japanese
 export LANG=ja_JP.UTF-8
 export LESSCHARSET=utf-8
+
+# completion color
+export LS_COLORS='di=33:ln=32:so=41:pi=31:ex=31:bd=43:cd=43:su=31:sg=31:tw=31:ow=31'
+zstyle ':completion:*' list-colors $LS_COLORS
 
 # ls color
 export LSCOLORS=Dxcxxbxbbxxcxcbxbxbxbx
