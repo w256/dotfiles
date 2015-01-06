@@ -56,12 +56,8 @@ zstyle ':completion:*' list-colors $LS_COLORS
 export LSCOLORS=Dxcxxbxbbxxcxcbxbxbxbx
 export CLICOLOR=true
 
-# alias
-alias ll='ls -l'
-alias la='ls -la'
-alias h='history'
-alias g='grep --color=auto -ERUIn'
-alias v='vim'
-
-# personal alias
-source $HOME/.zshrc.personal
+# alias                
+source $HOME/dotfiles/general.alias
+                       
+# personal setting     
+source $HOME/.zshrc.personal 

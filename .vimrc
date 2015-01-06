@@ -36,19 +36,19 @@ hi CursorColumn ctermbg=DarkGreen
 """
 "  Neobundle
 """
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+"set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+"call neobundle#begin(expand('~/.vim/bundle/'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
+"NeoBundleFetch 'Shougo/neobundle.vim'
 
 " add NeoBndle plugin under here
-NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'Shougo/unite.vim'
 
-call neobundle#end()
+"call neobundle#end()
 
 " Required:
-filetype plugin indent on
+"filetype plugin indent on
 
-NeoBundleCheck
+"NeoBundleCheck
