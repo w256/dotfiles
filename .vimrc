@@ -16,6 +16,9 @@ set shiftwidth=4
 au BufWritePost * mkview
 autocmd BufReadPost * loadview
 
+" undo
+set undodir=D:~/.vim/undo
+
 " ruler
 set ruler
 set cursorline

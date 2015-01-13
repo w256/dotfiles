@@ -60,7 +60,8 @@ export LSCOLORS=Dxcxxbxbbxxcxcbxbxbxbx
 export CLICOLOR=true
 
 # alias                
-source $HOME/dotfiles/general.alias
-                       
-# personal setting     
-source $HOME/.zshrc.personal 
+source $HOME/dotfiles/.zshrc.general.alias
+source $HOME/dotfiles/local/.zshrc.local.alias
+
+# local settig
+source $HOME/dotfiles/local/.zshrc.local
