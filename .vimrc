@@ -36,6 +36,10 @@ hi Identifier ctermfg=Cyan
 hi PreProc ctermfg=Magenta
 hi CursorColumn ctermbg=DarkGreen
 
+" SpecialKey
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
 """
 "  Neobundle
 """

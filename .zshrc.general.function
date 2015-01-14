@@ -1,0 +1,8 @@
+###
+# ~/dotfiles/.zshrc.general.function
+###
+function chpwd() { ls }
+function stu(){
+          cp $1 _sjis_$1
+          iconv -f SJIS -t UTF8 _sjis_$1 > $1
+}
