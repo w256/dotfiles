@@ -1,12 +1,8 @@
 ###
-# ~/dotfiles/.zshrc.general.alias
+# ~/dotfiles/.bash.general.alias
 ###
 alias ll='ls -l'                                                                                                                                             alias la='ls -la'
 alias h='history'
 alias g='grep --color=auto -ERUIn'
 alias sh='sh -u'
 alias v='vim'
-alias -s .php='php'
-alias -s .py='python'
-alias -s .rb='ruby'
-alias -s .tar.gz='tar zxvf'

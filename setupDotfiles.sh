@@ -7,4 +7,5 @@ mkdir -p ~/dotfiles/local
 touch ~/dotfiles/local/.zshrc.local
 touch ~/dotfiles/local/.zshrc.local.alias
 touch ~/dotfiles/local/.zshrc.local.function
+touch ~/dotfiles/local/.bash.local.alias
 echo "dotfiles setup conpleted."

@@ -1,12 +1,14 @@
-# .bash_profile          
+# path
+PATH=$PATH:.
+export PATH
 
-# global setting                                                                                                                                 
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc    
-fi                       
+# alias↲
+source $HOME/dotfiles/.bash.general.alias
 
-# alias                     
-source $HOME/dotfiles/general.alias
+###
+# $HOME/dotfiles/local/.bash.local.alias↲
+###
+source $HOME/dotfiles/local/.bash.local.alias
 
-# personal setting       
-source $HOME/.bash_personal    
+# confirm alias
+alias al='cat ~/dotfiles/.bash.general.alias;cat ~/dotfiles/local/.bash.local.alias' 

@@ -16,6 +16,9 @@ setopt auto_cd
 DIRSTACKSIZE=10
 setopt auto_pushd
 
+# path
+PATH=$PATH:.
+export PATH
 
 # history
 export HISTFILE=${HOME}/.zsh_history
@@ -74,3 +77,7 @@ source $HOME/dotfiles/.zshrc.general.function
 ###
 source $HOME/dotfiles/local/.zshrc.local.alias
 source $HOME/dotfiles/local/.zshrc.local.function
+
+# confirm alias & function
+alias al='cat ~/dotfiles/.zshrc.general.alias;cat ~/dotfiles/local/.zshrc.local.alias'                                                                                             
+alias fn='cat ~/dotfiles/.zshrc.general.function;cat ~/dotfiles/local/.zshrc.local.function'
