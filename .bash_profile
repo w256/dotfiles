@@ -2,12 +2,13 @@
 PATH=$PATH:.
 export PATH
 
+# prompt
+PS1="\u@\h:\w: % "
+
 # alias↲
 source $HOME/dotfiles/.bash.general.alias
 
-###
-# $HOME/dotfiles/local/.bash.local.alias↲
-###
+# local alias↲
 source $HOME/dotfiles/local/.bash.local.alias
 
 # confirm alias

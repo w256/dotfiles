@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/w256/dotfiles'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/w256/Dropbox/100.study'
+let g:netrw_dirhist_2='/Users/w256/Dropbox'
+let g:netrw_dirhist_3='/Users/w256/Dropbox/200.work'
+let g:netrw_dirhist_4='/Users/w256/Dropbox/200.work/250.IRDB'
+let g:netrw_dirhist_5='/Users/w256/Dropbox/200.work/250.IRDB/staticsArcive'
