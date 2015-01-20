@@ -15,6 +15,7 @@ setopt cdable_vars
 setopt auto_cd
 DIRSTACKSIZE=10
 setopt auto_pushd
+bindkey -v
 
 # path
 PATH=$PATH:.
