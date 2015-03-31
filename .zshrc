@@ -37,6 +37,9 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^p" history-beginning-search-backward-end
 bindkey "^n" history-beginning-search-forward-end
 
+# directory stack
+setopt pushd_ignore_dups
+
 # R prompt
 autoload -Uz vcs_info
 setopt prompt_subst
@@ -82,3 +85,6 @@ source $HOME/dotfiles/local/.zshrc.local.function
 # confirm alias & function
 alias al='cat ~/dotfiles/.zshrc.general.alias;cat ~/dotfiles/local/.zshrc.local.alias'                                                                                             
 alias fn='cat ~/dotfiles/.zshrc.general.function;cat ~/dotfiles/local/.zshrc.local.function'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

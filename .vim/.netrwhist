@@ -1,8 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/w256/Dropbox/100.study'
-let g:netrw_dirhist_2='/Users/w256/Dropbox'
-let g:netrw_dirhist_3='/Users/w256/Dropbox/200.work'
-let g:netrw_dirhist_4='/Users/w256/Dropbox/200.work/250.IRDB'
-let g:netrw_dirhist_5='/Users/w256/Dropbox/200.work/250.IRDB/staticsArcive'
-let g:netrw_dirhist_6='/Users/w256/dotfiles/local'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/w256/Library/Mobile Documents/com~apple~CloudDocs/000.now/agile-temple-7786/scala-getting-started/src/main/scala'
+let g:netrw_dirhist_2='/Users/w256/Library/Mobile Documents/com~apple~CloudDocs/000.now/agile-temple-7786/scala-getting-started/src/main/scala/com'
+let g:netrw_dirhist_3='/Users/w256/Library/Mobile Documents/com~apple~CloudDocs/000.now/agile-temple-7786/scala-getting-started/src/main/scala/com/example'
+let g:netrw_dirhist_4='/Users/w256/Library/Mobile Documents/com~apple~CloudDocs/000.now/4w/app/models'

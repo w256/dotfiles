@@ -40,22 +40,32 @@ hi CursorColumn ctermbg=DarkGreen
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
+" netrw関連
+" see http://blog.tojiru.net/article/234400966.html
+"
+" netrwは常にtree view
+let g:netrw_liststyle = 3
+" netrwは'v'でファイルを開くときは右側に開く。(デフォルトが左側なので入れ替え)
+let g:netrw_altv = 1
+" netrwは'o'でファイルを開くときは下側に開く。(デフォルトが上側なので入れ替え)
+let g:netrw_alto = 1
+
+
 """
 "  Neobundle
 """
-"set runtimepath+=~/.vim/bundle/neobundle.vim/
+set nocompatible
+filetype off            " for NeoBundle
 
-" Required:
-"call neobundle#begin(expand('~/.vim/bundle/'))
+if has('vim_starting')
+    set rtp+=$HOME/.vim/bundle/neobundle.vim/
+endif
+    call neobundle#begin(expand('~/.vim/bundle'))
+    NeoBundleFetch 'Shougo/neobundle.vim'
+    call neobundle#end()
 
-"NeoBundleFetch 'Shougo/neobundle.vim'
-
-" add NeoBndle plugin under here
-"NeoBundle 'Shougo/unite.vim'
-
-"call neobundle#end()
-
-" Required:
-"filetype plugin indent on
-
-"NeoBundleCheck
+" NeoBundle で管理するプラグインを追加します。
+NeoBundle 'Shougo/neocomplcache.git'
+NeoBundle 'Shougo/unite.vim.git'
+NeoBundle 'derekwyatt/vim-scala'
+filetype plugin indent on       " restore filetype
