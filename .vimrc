@@ -11,6 +11,7 @@ set smarttab
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set softtabstop=0
 
 " resume
 au BufWritePost * mkview
@@ -35,6 +36,12 @@ hi Comment ctermfg=Yellow
 hi Identifier ctermfg=Cyan
 hi PreProc ctermfg=Magenta
 hi CursorColumn ctermbg=DarkGreen
+
+" popup coler
+hi Pmenu ctermbg=0
+hi PmenuSel ctermbg=4
+hi PmenuSbar ctermbg=2
+hi PmenuThumb ctermfg=3
 
 " SpecialKey
 set list

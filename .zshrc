@@ -28,7 +28,6 @@ export SAVEHIST=100000
 setopt share_history
 setopt hist_reduce_blanks
 setopt hist_verify
-setopt hist_no_store
 
 # history completion
 autoload history-search-end
