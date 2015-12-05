@@ -8,10 +8,10 @@ set cindent
 
 " tab
 set smarttab
-set expandtab
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
-set softtabstop=0
+set softtabstop=4
 
 " resume
 au BufWritePost * mkview
@@ -37,42 +37,33 @@ hi Identifier ctermfg=Cyan
 hi PreProc ctermfg=Magenta
 hi CursorColumn ctermbg=DarkGreen
 
-" popup coler
+" popup color
 hi Pmenu ctermbg=0
 hi PmenuSel ctermbg=4
 hi PmenuSbar ctermbg=2
 hi PmenuThumb ctermfg=3
 
-" SpecialKey
+" special Chars
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=eol:\ ,tab:>-,extends:<,trail:_
 
-" netrw関連
+" status line
+set laststatus=2
+
 " see http://blog.tojiru.net/article/234400966.html
 "
-" netrwは常にtree view
+" netrw : ree view
 let g:netrw_liststyle = 3
 " netrwは'v'でファイルを開くときは右側に開く。(デフォルトが左側なので入れ替え)
 let g:netrw_altv = 1
 " netrwは'o'でファイルを開くときは下側に開く。(デフォルトが上側なので入れ替え)
 let g:netrw_alto = 1
 
+" Vundle
+set rtp+=~/dotfiles/local/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
 
-"""
-"  Neobundle
-"""
-set nocompatible
-filetype off            " for NeoBundle
-
-if has('vim_starting')
-    set rtp+=$HOME/.vim/bundle/neobundle.vim/
-endif
-    call neobundle#begin(expand('~/.vim/bundle'))
-    NeoBundleFetch 'Shougo/neobundle.vim'
-    call neobundle#end()
-
-" NeoBundle で管理するプラグインを追加します。
-NeoBundle 'Shougo/neocomplcache.git'
-NeoBundle 'Shougo/unite.vim.git'
-NeoBundle 'derekwyatt/vim-scala'
-filetype plugin indent on       " restore filetype
+" Vim Markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'

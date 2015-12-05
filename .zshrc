@@ -8,7 +8,13 @@ setopt auto_list
 setopt complete_in_word
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+export LS_COLORS='di=33:ln=32:so=41:pi=31:ex=31:bd=43:cd=43:su=31:sg=31:tw=31:ow=31'
+zstyle ':completion:*' list-colors $LS_COLORS
 setopt auto_param_keys
+
+# bind key
+bindkey "^R" history-incremental-search-backward
+bindkey "^S" history-incremental-search-forward
 
 # directory operation
 setopt cdable_vars
@@ -61,10 +67,6 @@ setopt combining_chars
 export LANG=ja_JP.UTF-8
 export LESSCHARSET=utf-8
 
-# completion color
-export LS_COLORS='di=33:ln=32:so=41:pi=31:ex=31:bd=43:cd=43:su=31:sg=31:tw=31:ow=31'
-zstyle ':completion:*' list-colors $LS_COLORS
-
 # ls color
 export LSCOLORS=Dxcxxbxbbxxcxcbxbxbxbx
 export CLICOLOR=true
@@ -75,6 +77,9 @@ source $HOME/dotfiles/.zshrc.general.alias
 # function
 source $HOME/dotfiles/.zshrc.general.function
 
+# env
+source $HOME/dotfiles/local/.zshrc.local.env
+
 ###
 # local settings
 ###
@@ -82,7 +87,7 @@ source $HOME/dotfiles/local/.zshrc.local.alias
 source $HOME/dotfiles/local/.zshrc.local.function
 
 # confirm alias & function
-alias al='cat ~/dotfiles/.zshrc.general.alias;cat ~/dotfiles/local/.zshrc.local.alias'                                                                                             
+alias al='cat ~/dotfiles/.zshrc.general.alias;cat ~/dotfiles/local/.zshrc.local.alias'
 alias fn='cat ~/dotfiles/.zshrc.general.function;cat ~/dotfiles/local/.zshrc.local.function'
 
 ### Added by the Heroku Toolbelt

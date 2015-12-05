@@ -13,3 +13,4 @@ source $HOME/dotfiles/local/.bash.local.alias
 
 # confirm alias
 alias al='cat ~/dotfiles/.bash.general.alias;cat ~/dotfiles/local/.bash.local.alias' 
+export PATH=/usr/local/sbin:$PATH
