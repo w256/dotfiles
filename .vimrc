@@ -48,7 +48,10 @@ set list
 set listchars=eol:\ ,tab:>-,extends:<,trail:_
 
 " status line
+" see https://github.com/anekos/char-counter-vim
+
 set laststatus=2
+set statusline=%-(%f%m%h%q%r%w%)%=%{&ff}\|%{&fenc}\ (%l,%c)\ %L\ %{b:charCounterCount}
 
 " see http://blog.tojiru.net/article/234400966.html
 "
@@ -59,11 +62,23 @@ let g:netrw_altv = 1
 " netrwは'o'でファイルを開くときは下側に開く。(デフォルトが上側なので入れ替え)
 let g:netrw_alto = 1
 
-" Vundle
-set rtp+=~/dotfiles/local/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+" NeoBundle
+if has('vim_starting')
+" 初回起動時のみruntimepathにneobundleのパスを指定する
+    set runtimepath+=~/dotfiles/local/bundle/neobundle.vim/
+endif
 
-" Vim Markdown
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+" NeoBundleを初期化
+call neobundle#begin(expand('~/dotfiles/local/bundle/plugin'))
+
+" インストールするプラグインをここに記述
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'anekos/char-counter-vim'
+
+NeoBundleCheck
+call neobundle#end()
+" ファイルタイプ別のプラグイン/インデントを有効にする
+filetype plugin indent on
