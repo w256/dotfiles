@@ -18,7 +18,8 @@ au BufWritePost * mkview
 autocmd BufReadPost * loadview
 
 " undo
-set undodir=D:~/.vim/undo
+set undodir=~/dotfiles/local/undo
+set undofile
 
 " ruler
 set ruler
@@ -47,9 +48,18 @@ hi PmenuThumb ctermfg=3
 set list
 set listchars=eol:\ ,tab:>-,extends:<,trail:_
 
+" clipbord
+:set guioptions+=a
+:set clipboard+=autoselect
+:set clipboard+=unnamed
+
+" encording
+set encoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,sjis
+
 " status line
 set laststatus=2
-set statusline=%-(%f%m%h%q%r%w%)%=%{&ff}\|%{&fenc}\ (%l,%c)\ %L\ %{b:charCounterCount}
+set statusline=%-(%f%m%h%q%r%w%)\ \(%{&fenc}/%{&ff}\)%=%Llines\ %{b:charCounterCount}chars\ :\ %l,%c
 
 " NeoBundle
 if has('vim_starting')
@@ -61,6 +71,8 @@ call neobundle#begin(expand('~/dotfiles/local/bundle/plugin'))
 NeoBundle 'anekos/char-counter-vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ujihisa/unite-colorscheme'
@@ -71,3 +83,13 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundleCheck
 call neobundle#end()
 filetype plugin indent on
+
+let g:lightline = {
+    \ 'active': {
+    \   'left': [ ['mode', 'paste'], ['readonly', 'filename', 'modified'] ],
+    \   'right': [ [ 'syntastic', 'lineinfo' ], ['charCount'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
+    \ },
+    \ 'component': {
+    \   'charCount': '%{b:charCounterCount}chars %Llines'
+    \ }
+    \ }

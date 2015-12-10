@@ -28,7 +28,7 @@ PATH=$PATH:.
 export PATH
 
 # history
-export HISTFILE=${HOME}/.zsh_history
+export HISTFILE=~/dotfiles/local/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 setopt share_history
