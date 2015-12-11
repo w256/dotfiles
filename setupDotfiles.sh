@@ -1,5 +1,6 @@
 #!/bin/sh
 mkdir -p ~/dotfiles/local/undo
+mkdir -p ~/dotfiles/local/view
 ln -si ~/dotfiles/.zshrc ~/.zshrc
 ln -si ~/dotfiles/.vimrc ~/.vimrc
 ln -si ~/dotfiles/.bash_profile ~/.bash_profile

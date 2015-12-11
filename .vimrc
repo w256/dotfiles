@@ -14,6 +14,7 @@ set shiftwidth=4
 set softtabstop=4
 
 " resume
+set viewdir=~/dotfiles/local/view
 au BufWritePost * mkview
 autocmd BufReadPost * loadview
 
@@ -22,9 +23,7 @@ set undodir=~/dotfiles/local/undo
 set undofile
 
 " ruler
-set ruler
 set cursorline
-set cursorcolumn
 
 " syntax hilight
 syntax on
@@ -36,7 +35,8 @@ colorscheme default
 hi Comment ctermfg=Yellow
 hi Identifier ctermfg=Cyan
 hi PreProc ctermfg=Magenta
-hi CursorColumn ctermbg=DarkGreen
+hi Visual ctermfg=Black guibg=LightGrey
+hi Title guifg=LightGrey
 
 " popup color
 hi Pmenu ctermbg=0
