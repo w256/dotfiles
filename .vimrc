@@ -19,8 +19,8 @@ au BufWritePost * mkview
 autocmd BufReadPost * loadview
 
 " undo
-set undodir=~/dotfiles/local/undo
 set undofile
+set undodir=~/dotfiles/local/undo
 
 " ruler
 set cursorline
@@ -59,7 +59,6 @@ set fileencodings=utf-8,iso-2022-jp,sjis
 
 " status line
 set laststatus=2
-set statusline=%-(%f%m%h%q%r%w%)\ \(%{&fenc}/%{&ff}\)%=%Llines\ %{b:charCounterCount}chars\ :\ %l,%c
 
 " NeoBundle
 if has('vim_starting')
@@ -76,9 +75,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ujihisa/unite-colorscheme'
-NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/neocomplcache.vim'
-NeoBundle 'Shougo/unite.vim'
 
 NeoBundleCheck
 call neobundle#end()
