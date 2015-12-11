@@ -1,8 +1,0 @@
-###
-# ~/dotfiles/.bash.general.alias
-###
-alias ll='ls -l'                                                                                                                                             alias la='ls -la'
-alias h='history'
-alias g='grep --color=auto -ERUIn'
-alias sh='sh -u'
-alias v='vim'

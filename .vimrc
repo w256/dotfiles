@@ -32,11 +32,18 @@ set showmatch
 " color
 set t_Co=256
 colorscheme default
-hi Comment ctermfg=Yellow
-hi Identifier ctermfg=Cyan
-hi PreProc ctermfg=Magenta
+hi Comment ctermfg=Yellow cterm=bold cterm=bold gui=bold ctermfg=LightGrey
+hi Identifier ctermfg=White
+hi PreProc ctermfg=LightMagenta
+hi String ctermfg=Green
+hi Statement ctermfg=LightCyan
+hi Type ctermfg=LightGreen
+hi Title term=bold cterm=bold gui=bold ctermfg=White
+hi htmlBold term=bold cterm=bold gui=bold ctermfg=White
+hi htmlItalic cterm=bold cterm=bold gui=bold ctermfg=LightGrey
 hi Visual ctermfg=Black guibg=LightGrey
-hi Title guifg=LightGrey
+hi clear CursorLine
+hi CursorLine term=reverse ctermbg=DarkGrey
 
 " popup color
 hi Pmenu ctermbg=0
@@ -76,6 +83,7 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'Shougo/unite.vim'
 
 NeoBundleCheck
 call neobundle#end()

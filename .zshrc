@@ -82,6 +82,7 @@ source $HOME/dotfiles/local/.zshrc.local.env
 ###
 # local settings
 ###
+source $HOME/dotfiles/local/.zshrc.local
 source $HOME/dotfiles/local/.zshrc.local.alias
 source $HOME/dotfiles/local/.zshrc.local.function
 
