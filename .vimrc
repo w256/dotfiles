@@ -80,10 +80,10 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'ujihisa/unite-colorscheme'
 
 NeoBundleCheck
 call neobundle#end()
