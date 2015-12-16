@@ -64,6 +64,9 @@ set listchars=eol:\ ,tab:>-,extends:<,trail:_
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,sjis
 
+" japanese
+set ambiwidth=double
+
 " status line
 set laststatus=2
 
@@ -76,13 +79,16 @@ call neobundle#begin(expand('~/dotfiles/local/bundle/plugin'))
 
 NeoBundle 'anekos/char-counter-vim'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'fuenor/JpFormat.vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'vim-scripts/Visual-Mark'
 NeoBundle 'ujihisa/unite-colorscheme'
 
 NeoBundleCheck
