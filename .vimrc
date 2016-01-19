@@ -29,6 +29,9 @@ set cursorline
 syntax on
 set showmatch
 
+" warp
+set wrap
+
 " color
 set t_Co=256
 colorscheme default
@@ -53,12 +56,12 @@ hi PmenuThumb ctermfg=3
 
 " special chars
 set list
-set listchars=eol:\ ,tab:>-,extends:<,trail:_
+set listchars=tab:\ \ ,eol:\ ,trail:_
 
 " clipbord
-:set guioptions+=a
-:set clipboard+=autoselect
-:set clipboard+=unnamed
+set guioptions+=a
+set clipboard+=autoselect
+set clipboard+=unnamed
 
 " encording
 set encoding=utf-8
@@ -82,6 +85,7 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'fuenor/JpFormat.vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'kannokanno/previm'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'Shougo/neocomplcache.vim'
@@ -104,3 +108,6 @@ let g:lightline = {
     \   'charCount': '%{b:charCounterCount}chars %Llines'
     \ }
     \ }
+
+" previm
+let g:previm_open_cmd = 'open -a Safari'

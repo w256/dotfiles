@@ -1,12 +1,15 @@
 ###
 # ~/dotfiles/.zshrc.general.alias
 ###
-alias ll='ls -l'
-alias la='ls -la'
+alias chs='ls -d ~/dotfiles/cheatSheet/* | xargs -I{} cat {}'
 alias h='history'
 alias g='grep --color=auto'
 alias grep='grep --color=auto'
+alias la='ls -la'
+alias ll='ls -l'
 alias sh='sh -u'
+alias t1='tail -n100'
+alias t10='tail -n1000'
 alias v='vim'
 alias xI='xargs -I{}'
 alias -s .php='php'
