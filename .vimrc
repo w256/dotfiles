@@ -67,6 +67,9 @@ set clipboard+=unnamed
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,sjis
 
+" fold
+set foldlevel=100 "autofold is disabled
+
 " japanese
 set ambiwidth=double
 

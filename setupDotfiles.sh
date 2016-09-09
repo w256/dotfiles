@@ -5,6 +5,8 @@ ln -si ~/dotfiles/.zshrc ~/.zshrc
 ln -si ~/dotfiles/.vimrc ~/.vimrc
 ln -si ~/dotfiles/.bash_profile ~/.bash_profile
 ln -si ~/dotfiles/.tmux ~/.tmux.conf
+ln -si ~/dotfiles/.gitignore ~/.gitignore
+ln -si ~/dotfiles/.gitconfig ~/.gitconfig
 touch ~/dotfiles/local/.zshrc.local
 touch ~/dotfiles/local/.zshrc.local.alias
 touch ~/dotfiles/local/.zshrc.local.function

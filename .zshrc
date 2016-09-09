@@ -93,3 +93,7 @@ alias fn='cat ~/dotfiles/.zshrc.general.function;cat ~/dotfiles/local/.zshrc.loc
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### virtualenv、virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh

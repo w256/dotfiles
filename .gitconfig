@@ -1,0 +1,8 @@
+[user]
+	name = w256
+	email = w256@rdct.info
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
